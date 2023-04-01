@@ -1,11 +1,13 @@
 import mongoose from 'mongoose';
 
-const Robot = mongoose.model(
-    'Robot',
+const User = mongoose.model(
+    'User',
     {
-        name: String,
-        type: Number
+        username: String,
+        robots: Number,
+        cloud: Number,
+        rainbow: Number
     }
 );
 
-export default Robot;
+export default User;

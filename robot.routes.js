@@ -5,13 +5,18 @@ const router = express.Router();
 
 import * as RobotCtrl from '../controllers/robot.ctrl';
 
-router.put('/update/:id', asyncHandler(RobotCtrl.updateRobot));
-
-router.get('/', RobotCtrl.getAllRobots);
 
 router.post('/create', asyncHandler(RobotCtrl.create));
 
-router.get('/:id', asyncHandler(RobotCtrl.getRobot));
+router.get('/usernames', asyncHandler(RobotCtrl.getUsernames))
+
+// router.put('/update/:id', asyncHandler(RobotCtrl.updateRobot));
+
+// router.get('/', RobotCtrl.getAllRobots);
+
+// router.post('/create', asyncHandler(RobotCtrl.create));
+
+// router.get('/:id', asyncHandler(RobotCtrl.getRobot));
 
 
 
